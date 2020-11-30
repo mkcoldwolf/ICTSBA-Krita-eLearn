@@ -1,0 +1,115 @@
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  /*z-index: 1;*/ /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+
+.sidenav .navmenu {
+	padding-top: 20px;
+}
+
+.navmenu a {
+	text-decoration: none;
+}
+
+.navmenu a span, .tur-collapse span {
+	display: block;
+	position: absolute;
+	background: linear-gradient(90deg, transparent, #2196f3);
+	background-color: #d63636;
+	height: 2px;
+	width: 100%;
+}
+
+.navmenu a span:nth-child(1), .tur-collapse span:nth-child(1) {
+	left: -100%;
+}
+
+.navmenu a span:nth-child(4), .tur-collapse span:nth-child(4) {
+	left: 100%;
+}
+
+.navmenu a:hover span:nth-child(1), .tur-collapse:hover span:nth-child(1) {
+	left: 100%;
+	transition: 1.5s;
+}
+
+.navmenu a:hover span:nth-child(4), .tur-collapse:hover span:nth-child(4) {
+	left: -100%;
+	transition: 1.5s;
+}
+
+/* The navigation menu links */
+.sidenav-button {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  font-family: Arial;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav-button:hover {
+  color: #f1f1f1;
+}
+
+.sidenav-button-small {
+  padding: 6px 0px 6px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+.sidenav-button-small:hover {
+	color: #66CCFF;
+}
+
+.tur-collapse {
+  cursor: pointer;
+  background-color: Transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+}
+
+.tur-collapse:after {
+  content: '\002B';
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Style page content */
+.main-frame {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 0px;
+  transition: 0.5s;
+}
+
+body {
+	margin: 0;
+}
