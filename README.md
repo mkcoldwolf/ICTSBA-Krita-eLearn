@@ -57,4 +57,4 @@ https://mc.mccwtech.net/projects/e-learn
   - ```git clone https://github.com/mkcoldwolf/ICTSBA-Krita-eLearn```
 
 ### License
-  - [Apache License 2.0](LICENSE.txt)
+  - [Apache License 2.0](LICENSE)
